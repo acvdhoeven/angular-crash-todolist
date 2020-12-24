@@ -29,7 +29,7 @@ export class TodoService {
 
   deleteTodo( todo: Todo): void {
     const url: string = this.todosUrl + '/' + todo.id;
-    this.http.delete(url, httpOptions);
+    this.http.delete(url, httpOptions).subscribe();
   }
 
   toggleCompleted(todo: Todo): Observable<any> {
