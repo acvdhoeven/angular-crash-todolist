@@ -1,5 +1,7 @@
-<form class="form" (ngSubmit)="onSubmit()">
-    <input type="text" name="title" [(ngModel)]="title" 
-        placeholder="Add Todo..." />
-    <input type="submit" value="Submit" class="btn" />
-    </form>
+<form (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>Favorite food</mat-label>
+    <input matInput name="title" [(ngModel)]="title"
+           placeholder="Add Todo..."/>
+  </mat-form-field>
+</form>
