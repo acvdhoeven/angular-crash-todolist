@@ -1,9 +1,9 @@
 <div [ngClass]=setClasses()>
-<p>
-    <input (change)="onToggle(todo)" type="checkbox" />
+  <p>
+    <mat-checkbox (change)="onToggle(todo)"></mat-checkbox>
     {{ todo.title }} ({{todo.id}})
-    <button mat-mini-fab color="primary" (click)="onDelete(todo)" class="del" >
+    <button mat-mini-fab color="primary" (click)="onDelete(todo)" class="del">
       <mat-icon>delete</mat-icon>
     </button>
-</p>
+  </p>
 </div>
